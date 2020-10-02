@@ -7,3 +7,9 @@ class FlightSerializer(serializers.ModelSerializer):
     class Meta:
         model = Flight
         fields = ['id', 'flight', 'date', 'destination', 'scheduled_departure_time', 'assigned_plane_type', 'capacity', 'seats_reserved', 'seats_available']
+
+
+class FlightMiniSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Flight
+        fields = ['id', 'flight', 'date', 'destination']
