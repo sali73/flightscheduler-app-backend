@@ -5,7 +5,7 @@ from rest_framework import routers
 from fligthscheduler.api import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
+router.register(r'flight', views.FlightViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
